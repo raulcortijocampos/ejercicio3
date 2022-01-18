@@ -1,0 +1,19 @@
+<p>listado works!</p>
+<h3>Listado de frutas</h3>
+
+<form (submit)="addFruta()" >
+    <input type="text" [(ngModel)]="frutaAdd"
+    [ngModelOptions]="{standalone: true}"/>
+</form>
+
+<h5>{{frutaAdd}}</h5>
+
+<ul>
+    <li *ngFor="let fruta of listadoFrutas">
+        {{fruta}}
+    </li>
+</ul>
+
+
+
+
