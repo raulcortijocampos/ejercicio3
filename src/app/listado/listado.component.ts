@@ -14,8 +14,6 @@ export class ListadoComponent implements OnInit {
 
   frutaAdd: string | undefined;
   //miFruta: string | undefined;
-
-
   //fruta: String | "";
   ngOnInit(): void {
     //this.fruta = "";
