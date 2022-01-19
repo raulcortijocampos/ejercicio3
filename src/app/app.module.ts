@@ -5,17 +5,21 @@ import { AppComponent } from './app.component';
 import { ListadoComponent } from './listado/listado.component';
 import { MisclientesComponent } from './misclientes/misclientes.component';
 import { CondicionalesComponent } from './condicionales/condicionales.component';
+import { ResultadosComponent } from './resultados/resultados.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent,
     ListadoComponent,
     MisclientesComponent,
-    CondicionalesComponent
+    CondicionalesComponent,
+    ResultadosComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
