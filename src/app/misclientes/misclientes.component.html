@@ -1,1 +1,22 @@
-<p>misclientes works!</p>
+<p>Rellena los datos de la nueva persona</p>
+
+<form (submit)="addCliente()">
+    <div>
+        <label>Nombre</label>
+        <input type="text" [(ngModel)]="clienteAdd.nombre" [ngModelOptions]="{standalone: true}"/>
+    </div>
+    <div>
+        <label>Direccion</label>
+        <input type="text" [(ngModel)]="clienteAdd.direccion" [ngModelOptions]="{standalone: true}"/>
+    </div>
+    <div>
+        <input type="submit" value="añadir persona">
+    </div>
+</form>
+
+
+<ul>
+    <li *ngFor="let cliente of listaClientes">
+        {{cliente.nombre}} vive en {{cliente.direccion}}
+    </li>
+</ul>

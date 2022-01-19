@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ListadoComponent } from './listado/listado.component';
 import { MisclientesComponent } from './misclientes/misclientes.component';
+import { CondicionalesComponent } from './condicionales/condicionales.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListadoComponent,
-    MisclientesComponent
+    MisclientesComponent,
+    CondicionalesComponent
   ],
   imports: [
     BrowserModule,
