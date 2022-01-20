@@ -1,0 +1,86 @@
+<p>formularios works!</p>
+<form style="background-color: aquamarine; padding:20px">
+    <div class="form-group">
+        <label>Nombre</label>
+        <input type="text">
+    </div>
+    <div class="form-group">
+        <label>Contraseña</label>
+        <input type="password">
+    </div>
+    <div class="form-group">
+        <label>repite contraseña</label>
+        <input type="password">
+    </div>
+    <div class="form-group">
+        <label>email</label>
+        <input type="text">
+    </div>
+    <div class="form-group">
+        <label>genero</label>
+        <input *ngFor="let generoCurrent of generos" type="radio" name="genero" value="generoCurrent">
+    </div>
+    <div class="form-group">
+        <label>orientacion sexual</label>
+        <select class="form-control">
+            <option *ngFor="let orientacion of orientaciones">{{orientacion}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>tipo de relacion buscada</label>
+        <select class="form-control">
+            <option *ngFor="let tipoRelacion of tiposRelaciones">{{tipoRelacion}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label><input type="checkbox">condiciones de uso</label>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="enviar">
+    </div>
+</form>
+
+<div class="form-group">
+    <label>Valores de validación del formulario</label>
+    <ul>
+      <li>Valid: </li>
+      <li>Invalid:</li>
+      <li>Touched: </li>
+    </ul>
+  </div>
+<!--
+<form (submit)="onSubmit()" #heroForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name"
+             required
+             [(ngModel)]="model.name" name="name"
+             #name="ngModel">
+      <div [hidden]="name.valid || name.pristine"
+           class="alert alert-danger">
+        Name is required
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="alterEgo">Alter Ego</label>
+      <input type="text" class="form-control" id="alterEgo"
+             [(ngModel)]="model.alterEgo" name="alterEgo">
+    </div>
+    <div class="form-group">
+      <label for="power">Hero Power</label>
+      <select class="form-control" id="power"
+              required
+              [(ngModel)]="model.power" name="power"
+              #power="ngModel">
+        <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+      </select>
+      <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
+        Power is required
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+    <button type="button" class="btn btn-default"
+            (click)="newHero(); heroForm.reset()">New Hero</button>
+  </form>
+
+  -->

@@ -1,0 +1,13 @@
+<p>eventillos works!</p>
+
+<button (click)="clickBueno()">El bueno</button>
+<button (click)="clickFeo()">El feo</button>
+<button #botonMalo (mouseover)="clickMalo()">El malo</button>
+
+
+
+<form (submit)="enviarFormulario(nombre.value)" >
+    <label>Nombre</label>
+    <input #nombre (blur)="menosCinco(nombre.value)" type="text"/>
+    <input type="submit" value="enviar"/>
+</form>

@@ -7,6 +7,9 @@ import { MisclientesComponent } from './misclientes/misclientes.component';
 import { CondicionalesComponent } from './condicionales/condicionales.component';
 import { ResultadosComponent } from './resultados/resultados.component';
 import {HttpClientModule} from "@angular/common/http";
+import { EventillosComponent } from './eventillos/eventillos.component';
+import { FormulariosComponent } from './formularios/formularios.component';
+//import { Unidad6 } from './unidad6/unidad6.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import {HttpClientModule} from "@angular/common/http";
     ListadoComponent,
     MisclientesComponent,
     CondicionalesComponent,
-    ResultadosComponent
+    ResultadosComponent,
+    EventillosComponent,
+    FormulariosComponent
+    //Unidad6
   ],
   imports: [
     BrowserModule,
